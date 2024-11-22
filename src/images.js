@@ -1,3 +1,4 @@
+//Import texture images
 import dirtImg from './dirt.jpg';
 import glassImg from './glass.png';
 import grassImg from './grass.jpg';
