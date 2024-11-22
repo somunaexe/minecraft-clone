@@ -1,5 +1,7 @@
 import { useCallback, useEffect, useState } from "react"
 export const useKeyboard = () => {
+
+    //Actions the player can do and textures for objects the player can hold
     const [actions, setActions] = useState({
         moveForward: false,
         moveBackward: false,
@@ -13,13 +15,22 @@ export const useKeyboard = () => {
         texture5: false,
     })
 
+    //Handle key down event
     const handleKeyDown = useCallback((event) => {
-        
+        switch (event.keyCode) {
+            case "KeyW":
+            case "KeyS":
+            case "KeyA":
+            case "KeyD":
+        }
     })
 
+    //Handle key up event
     const handleKeyUp = useCallback((event) => {
         
     })
+
+
     useEffect(() => {
         document.addEventListener('keydown', handleKeyDown)
         document.addEventListener('keyup', handleKeyUp)
