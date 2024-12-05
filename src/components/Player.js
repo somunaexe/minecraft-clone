@@ -30,6 +30,7 @@ export const Player = () => {
     api.velocity.set(0,1,0)
   })
 
+  //Return the player
   return (
     <mesh ref={ref}></mesh>
   )
